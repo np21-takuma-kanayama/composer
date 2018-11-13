@@ -4,6 +4,7 @@ RUN apk add --no-cache \
     composer \
     php7-curl \
     php7-dom \
+    php7-fileinfo \
     php7-mbstring \
     php7-pdo \
     php7-tokenizer \
