@@ -13,7 +13,8 @@ RUN apk add --no-cache \
     php7-xmlwriter
 RUN composer config -g repos.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
+RUN composer global require laravel/installer
 
 WORKDIR /app
-ENTRYPOINT ["composer"]
+ENTRYPOINT ["laravel"]
 CMD ["help"]
