@@ -16,5 +16,5 @@ RUN composer global require hirak/prestissimo
 RUN composer global require laravel/installer
 
 WORKDIR /app
-ENTRYPOINT ["laravel"]
+ENTRYPOINT ["ash","-c","laravel"]
 CMD ["help"]
