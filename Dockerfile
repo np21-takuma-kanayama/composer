@@ -11,7 +11,7 @@ RUN apk add --no-cache \
     php7-tokenizer \
     php7-xml \
     php7-xmlwriter
-ENV PATH /composer/vendor/bin:$PATH
+ENV PATH /root/.composer/vendor/bin:$PATH
 RUN composer config -g repos.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
 
