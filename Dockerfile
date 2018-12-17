@@ -2,6 +2,7 @@ FROM alpine
 
 RUN apk add --no-cache \
     composer \
+    php7-bcmath \
     php7-curl \
     php7-dom \
     php7-fileinfo \
