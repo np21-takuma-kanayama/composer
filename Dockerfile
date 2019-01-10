@@ -15,7 +15,7 @@ RUN apk add --no-cache \
 RUN composer config -g repos.packagist composer https://packagist.jp
 RUN composer global require hirak/prestissimo
 ENV PATH /root/.composer/vendor/bin:$PATH
+RUN composer global require psy/psysh:@stable
 
 WORKDIR /app
-ENTRYPOINT ["composer"]
-CMD ["help"]
+ENTRYPOINT ["psysh"]
